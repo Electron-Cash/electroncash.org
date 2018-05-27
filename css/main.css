@@ -1,0 +1,498 @@
+/*GENERAL*/
+
+.section{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+button{
+  outline: none;
+}
+
+.reduce-width{
+  width: 80%; 
+  text-align: center; 
+  margin: 0 auto; 
+}
+
+/* ALERT */
+.alert {
+  position: relative;
+	height: 2.5rem;
+  background: #EE6969;
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+  z-index: 102;
+}
+
+/* HEADER */
+.erasable-header {
+  position: fixed;
+  width: 100%;
+  margin-top: -3.5rem;
+  padding-top: 50px;
+  transition: 0.7s all;
+  z-index: 100;
+  background-color: #0056C0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.topnav-download{
+  padding-top: 1px;
+}
+.topnav-download button{
+  color: white;
+  border-color: white;
+  text-align: right;
+}
+
+.topnav-download button:hover{
+  transition: .3s;
+  background-color: white;
+  color: #0056C0;
+}
+
+.shrink{
+  position: fixed;
+  width: 100%;
+  padding-top: 20px;
+  transition: 0.7s all;
+  z-index: 100;
+  background-color: #0056C0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.right{
+  text-align: right;
+  align-items: right;
+  justify-content: right;
+}
+
+.logo{
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.left{
+  text-align: left;
+}
+
+.topnav-a{
+  padding-top: 0.5em;
+}
+
+.topnav-a a, .home {
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.right{
+  text-align: right;
+}
+
+.home:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.topnav-a a:hover{
+  transition: .3s;
+  color: #A5ACBF;
+}
+
+.bg-cover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 0;
+  transition: all 350ms ease;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.reveal {
+  opacity: .90;
+  display: block;
+  pointer-events: auto;
+  visibility: visible;
+  z-index: 101;
+}
+
+.hamburger-shell {
+  margin: 0;
+  position: fixed;
+  overflow: hidden;
+  width: 70px;
+  height: 100px;
+  overflow: auto;
+  left: calc(100% - 60px);
+  opacity: 0;
+  z-index: 102;
+}
+
+.top, .middle{
+  position: absolute;
+  width: 42px;
+  height: 5px;
+  background-color: black;
+  transition: all 350ms ease-in-out;
+  top: 20px;
+}
+
+.middle {
+  top: 30px;
+}
+
+#menu {
+  position: fixed;
+  left: calc(100% - 272px);
+  top: 10px;
+  color: black;
+  display: none;
+  margin: 120px 30px;
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #333;
+  padding: 24px;
+  width: 200px;
+  text-align: right;
+  z-index: 102;
+  font-weight: bold;
+}
+
+#menu a li {
+  text-decoration: none!important;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  list-style: none;
+  color: #555;
+  transition: all 150ms ease;
+}
+
+#menu a li:hover {
+  color: #0056C0;
+  /* #00abff*/
+  padding-right: 3px;
+}
+
+#menu a li:hover:after {
+}
+
+#menu a {
+  text-decoration: none;
+}
+
+.rotate {
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  top: 30px;
+  background-color: red;
+  height: 2px;
+}
+
+.rotate-back {
+  transform: rotate(-225deg);
+  -webkit-transform: rotate(-225deg);
+  top: 30px;
+  background-color: red;
+  height: 2px;
+}
+
+.top {
+-webkit-animation-delay: 100ms;
+}
+
+.middle {
+-webkit-animation-delay: 250ms;
+}
+
+.bottom {
+  -webkit-animation-delay: 400ms;
+}
+
+.menu-name {
+  font-weight: 900;
+  color: black;
+  font-size: 13.5px;
+  text-decoration: none;
+  position: absolute;
+  top: 40px;
+  left: 1px;
+  transition: all 350ms;
+}
+
+.bump {
+  top: 64px;
+  color: red;
+}
+
+/*HERO*/
+/*
+.hero{
+  background-color: #0056C0;
+  color: white;
+}
+*/
+
+.hero-title{
+  text-align: center;
+}
+
+.logo{
+  width: 50%;
+}
+
+.big-title{
+  font-size: 10rem;
+  font-weight: bold;
+}
+
+.small-title{
+  font-size: 4rem;
+}
+
+.description{
+  font-size: 2rem;
+}
+
+.picture{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  -webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 8s; /* Firefox < 16 */
+        -ms-animation: fadein 8s; /* Internet Explorer */
+         -o-animation: fadein 8s; /* Opera < 12.1 */
+            animation: fadein 8s;
+
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* IMAGE */
+.image{
+  background-repeat:no-repeat; 
+
+background-image:  
+/* 2) Gradient              */ linear-gradient(to right, white, white), 
+/* 3) Color(using gradient) */ linear-gradient(to right, #F6F6F6, #F6F6F6);
+
+background-position: 
+/* 2) Gradient position     */ 0 0,
+/* 3) Color position        */ 0 100%;
+
+background-size:  
+/* 2) Gradient size         */ 100% 60%, 
+/* 3) Color size            */ 100% 40%;
+}
+
+/*BENEFITS*/
+.values{
+  text-align: center;
+  background-color: #F6F6F6;
+}
+
+/* ABOUT */
+.about{
+  background-repeat:no-repeat; 
+  background-image:  
+  /* 2) Gradient              */ linear-gradient(to right, #F6F6F6, #F6F6F6), 
+  /* 3) Color(using gradient) */ linear-gradient(to right, white, white);
+
+  background-position: 
+  /* 2) Gradient position     */ 0 0,
+  /* 3) Color position        */ 0 100%;
+
+  background-size:  
+  /* 2) Gradient size         */ 100% 50%, 
+  /* 3) Color size            */ 100% 50%;
+}
+.about-inverse{
+  background-repeat:no-repeat; 
+  background-image:  
+  /* 2) Gradient              */ linear-gradient(to right, white, white),
+  /* 3) Color(using gradient) */ linear-gradient(to right, #F6F6F6, #F6F6F6);
+
+  background-position: 
+  /* 2) Gradient position     */ 0 0,
+  /* 3) Color position        */ 0 100%;
+
+  background-size:  
+  /* 2) Gradient size         */ 100% 50%, 
+  /* 3) Color size            */ 100% 50%;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px; /* 5px rounded corners */
+    width: 100%;
+    background-color: #0056C0;
+    color: white;
+}
+
+.content{
+  padding: 3em;
+}
+
+
+
+/*DOWNLOAD*/
+.download{
+  text-align: center;
+}
+
+/* FAQ */
+.faq{
+  text-align: center;
+  background-color: #F6F6F6;
+}
+
+.bounties-button{
+  text-decoration: none;
+  background-color: #0056C0;
+  color: white;
+}
+
+.bounties-button:hover{
+  background-color: #004fb0;
+}
+
+/* BOUNTIES */
+.bounties-card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px; /* 5px rounded corners */
+  width: 100%;
+  margin-top: 2em;
+  border-top: 7px solid;
+  border-top-color: #004fb0;
+}
+
+.bounties-card:hover{ 
+     box-shadow: 1px 8px 20px rgba(0,0,0,0.2);
+    -webkit-transition:  box-shadow 1s ease-in;
+}
+
+.bounties-hero{
+  padding-bottom: 0em;
+}
+/* FOOTER */
+footer{
+  padding: 3em;
+  background-color: #0056C0;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover{
+  color: #A5ACBF;
+  text-decoration: none;
+}
+
+/*MOBILE OPTIMIZATION*/
+@media only screen and (max-width: 1000px) {
+  /* For mobile phones: */
+  .erasable-header{
+    opacity: 0;
+  }
+
+  .hamburger-shell{
+    opacity: 100;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .big-title{
+    font-size: 5rem;
+  }
+
+  .erasable-header{
+    opacity: 0;
+  }
+
+  .logo{
+    width: 60%;
+    justify-content: center;
+  }
+
+  .hamburger-shell{
+    opacity: 100;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* For mobile phones: */
+  .big-title{
+    font-size: 5rem;
+  }
+
+  .erasable-header{
+    opacity: 0;
+  }
+
+  .logo{
+    width: 80%;
+    justify-content: center;
+  }
+
+  .hamburger-shell{
+    opacity: 100;
+  }
+
+  .alert{
+    height: 5rem;
+  }
+}
