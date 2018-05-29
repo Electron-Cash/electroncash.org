@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Electron Cash</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body id="body">
+  <aside class="alert-banner">
+      <div class="alert">
+          <p><strong>Beware of Imposter Sites.</strong> ElectronCash.ORG is the ONLY official site for this wallet.</p>
+  </aside>
+  <header id="topnav">
+    <div class="erasable-header">
+      <div class="container">
+      <div class="row links">
+        <div class="eight columns left">
+          <h5><a class="home" href="./index.html">Electron Cash</a></h5>
+        </div>
+        <div class="one column topnav-a">
+          <a href="./index.html">Home</a>
+        </div>
+        <div class="one column topnav-a">
+          <a id="benefits-button">Benefits</a>
+        </div>
+        <div class="one column topnav-a">
+          <a id="download-button">Download</a>
+        </div>
+        <div class="one column topnav-a right">
+          <a id="faq-button">FAQ</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="bg-cover" class="reveal"></div>
+    
+    <a class="hamburger-shell">
+      <div class="hamb top"></div>
+        <div class="hamb middle"></div>
+      <div class="menu-name">MENU</div>
+
+      <ul id="menu">
+          <a href="./index.html"> <li>Home</li></a>
+          <a id="benefits-button2"> <li>Benefits</li></a>
+          <a id="download-button2"> <li>Download</li></a>
+          <a id="faq-button2"> <li>FAQ</li></a>
+      </ul>
+    </a>  
+  </header>
+
+  <div class="section hero">
+    <div class="container">
+      <div class="row">
+        <div class="twelve column hero-title" style="margin-top: 10%">
+          <div class="twelve columns">
+            <img class="logo" src="images/ec-logo-7.png">
+          </div>
+          <h1 style="margin-bottom: 0.5em;">A Bitcoin Cash SPV Wallet</h1>
+          <p class="description">
+            Control your own private keys. Easily back up your wallet with a mnemonic seed phrase.
+            Enjoy high security without downloading the blockchain or running a full node.
+          <p>
+          <button class="button-primary read-more" id="download-button3" style="margin-bottom: 10em;">Download Latest Version 3.2</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section image">
+    <div class="container">
+      <div class="row">
+        <div class="twelve column hero-image" style="margin-top: -10%">
+          <img class="picture" src="images/shot4.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section values" id="benefits">
+    <div class="container">
+      <div class="row">
+        <h1 style="margin-bottom: 1em;">Benefits</h1>
+      </div>
+      <div class="row">
+        <div class="three columns value">
+          <h2 class="value-multiplier"><i class="fas fa-lock"></i></h2>
+          <h5 class="value-heading">Safe</h5>
+          <p class="value-description">Your private keys are encrypted and never leave your computer.</p>
+        </div>
+        <div class="three columns value">
+          <h2 class="value-multiplier"><i class="fas fa-leaf"></i></h2>
+          <h5 class="value-heading">Forgiving</h5>
+          <p class="value-description">Your funds can be recovered from a secret phrase.</p>
+        </div>
+        <div class="three columns value">
+          <h2 class="value-multiplier"><i class="fas fa-stopwatch"></i></h2>
+          <h5 class="value-heading">Instant On</h5>
+          <p class="value-description">Electrum is fast, because it uses servers that index the Bitcoin blockchain.</p>
+        </div>
+        <div class="three columns value">
+          <h2 class="value-multiplier"><i class="fas fa-sign-out-alt"></i></h2>
+          <h5 class="value-heading">No Lock-In</h5>
+          <p class="value-description">You can export your private keys and use them in other Bitcoin clients.</p>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 2.5%;">
+        <div class="three columns value">
+          <h2 class="value-multiplier"><i class="fas fa-bolt"></i></h2>
+          <h5 class="value-heading">No Downtimes</h5>
+          <p class="value-description">Electrum servers are decentralized and redundant. Your wallet is never down.</p>
+        </div>
+        <div class="three columns value">
+          <h2 class="value-multiplier"><i class="fas fa-shield-alt"></i></h2>
+          <h5 class="value-heading">Proof Checking</h5>
+          <p class="value-description">Electrum Wallet verifies all the transactions in your history using SPV.</p>
+        </div>
+        <div class="three columns value">
+          <h2 class="value-multiplier"><i class="fas fa-snowflake"></i></h2>
+          <h5 class="value-heading">Cold Storage</h5>
+          <p class="value-description">Keep your private keys offline, and go online with a watching-only wallet.</p>
+        </div>
+        <div class="three columns value">
+          <h2 class="value-multiplier"><i class="fas fa-chart-pie"></i></h2>
+          <h5 class="value-heading">Multisig</h5>
+          <p class="value-description">Split the permission to spend your coins between several wallets.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section about">
+    <div class="container">
+      <div class="row">
+        <div class="card">
+            <div class="content">
+              <h3>What is SPV?</h3>
+              <p>
+                SPV stands for Simplified Payment Verification.  It was first described by Satoshi Nakamoto in the original Bitcoin whitepaper.  This method allows a wallet to provide strong security without the need for downloading the blockchain or running a full node.  
+                SPV lets you validate your own transactions by ensuring they are confirmed in the blockchain.  It  uses the best header chain with the most cumulative proof of work and the correct hashing difficulty level.  
+                Electron Cash relies on a distributed network of servers which handle the heaviest part of blockchain operations.  Your private keys sign transactions locally.  They are never sent to the servers.
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section download" id="download">
+    <div class="container">
+      <div class="row">
+        <h1>Download</h1>
+      </div>
+      <div class="row">
+        <h6 class="reduce-width" style="padding-bottom: 3em">This software is provided free of charge in hopes that it will be useful, but without any warranty of merchantability, under the terms of the <a href="https://mit-license.org/">MIT License</a>.</h6>
+      </div>
+      <div class="row">
+        <div class="three columns value">
+          <h2 class="value-multiplier"><i class="fab fa-windows"></i></h2>
+          <h5 class="value-heading">Windows</h5>
+          <div class="row">
+            <a href="https://electroncash.org/downloads/3.1.5/win-linux/ElectronCash-3.1.5.exe">ElectronCash-3.1.5.exe</a>
+          </div>
+          <div class="row">
+            <a href="https://electroncash.org/downloads/3.1.5/win-linux/ElectronCash-3.1.5-PORTABLE.exe">Portable Version</a>
+          </div>
+          <div class="row">
+            <a href="https://electroncash.org/downloads/3.1.5/win-linux/ElectronCash-3.1.5.zip">Source Code</a>
+            <p>&nbsp;</p>
+          </div>
+
+        </div>
+
+        <div class="three columns value">
+          <h2 class="value-multiplier"><i class="fab fa-apple"></i></h2>
+          <h5 class="value-heading">OSX</h5>
+          <div class="row">
+            <a href="https://electroncash.org/downloads/3.1.2/mac/Electron-Cash-3.1.2-macosx.dmg">Mac OSX .dmg file</a>
+          </div>
+          <div class="row">
+            
+            <a href="https://electroncash.org/downloads/3.1.5/win-linux/ElectronCash-3.1.5.tar.gz">Source Code</a>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+
+        <div class="three columns value">
+          <h2 class="value-multiplier"><i class="fab fa-linux"></i></h2>
+          <h5 class="value-heading">Linux</h5>
+          <div class="row">
+            <a href="https://electroncash.org/downloads/3.1.5/win-linux/ElectronCash-3.1.5.tar.gz">Source Code</a>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+
+        <div class="three columns value">
+          <h2 class="value-multiplier"><i class="fab fa-android"></i></h2>
+          <h5 class="value-heading">Android</h5>
+          <div class="row">
+            <a href="https://electroncash.org/downloads/3.1.5/android/ElectronCash-3.1.5.apk">3.1.5 APK file</a>
+          </div>
+          <div class="row">
+            <a href="https://play.google.com/store/apps/details?id=org.electroncash.electroncash3">Google Play Store</a>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h6 style="color:#EE6969"><strong>
+          Please take the time to verify
+          the authenticity of these files before running them.
+          This protects you from hackers and malware!
+        </strong></h6>
+      </div>
+      <div class="row">
+        <h6>You can find signatures and checksum hashes for all files <a href="https://github.com/fyookball/keys-n-hashes">here</a>.</h6>
+        <h6>Mac dmg signed by <a href="https://pgp.mit.edu/pks/lookup?search=Calin+Culianu&op=index">Calin Culianu</a>. All other files signed by <a href="https://github.com/fyookball/keys-n-hashes/blob/master/pubkeys/jonaldkey2.txt">Jonald Fyookball</a>.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="section about-inverse">
+      <div class="container">
+        <div class="row">
+          <img class="picture" src="images/shot4.png">
+        </div>
+      </div>
+    </div>
+
+  <div class="section faq" id="faq">
+    <div class="container">
+      <div class="row">
+        <h1>FAQ</h1>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <h3>What if I need support?</h3>
+          <p>Please visit us on <a href="https://github.com/fyookball/electrum/issues?utf8=%E2%9C%93&q=is%3Aissue">Github</a>. First check the issues already submitted
+          and if you don't find your answer, submit a new issue.
+          The most common issues are with 2fa wallets, which are covered in <a href="https://github.com/fyookball/electrum/issues/41#issuecomment-357468208">issue 41</a>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <h3>Looking for an older version?</h3>
+          <p>Running an older version of Electron Cash is strongly discouraged. Earlier versions may be incompatible with the network, or worse: insecure, leading to loss of funds. You should only run an outdated version if absolutely necessary or for research purposes.
+          To proceed with caution, click <a href="https://electroncash.org/downloads/">here</a>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <h3>How can I help?</h3>
+          <p>Electron Cash development is community funded.
+          Donate Bitcoin Cash: <pre><code class="address"><a href="bitcoincash:qz4wq9m860zr5p2nfdpttm5ymdqdyt3psc95qjagae" style="text-decoration: none;">qz4wq9m860zr5p2nfdpttm5ymdqdyt3psc95qjagae</a></code></pre> If you're a coder, you can also help fix bugs and earn money too!</p>
+          <a class="button bounties-button" href="bounties.html" style="text-decoration: none;">Bug Bounties</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <h4>The Revolution Will Not Be Centralized</h4>
+      </div>
+      <div class="row">
+        <h6 style="font-size: 1.75rem;">
+          <a href="http://www.bitcoincash.org/">Learn more about Bitcoin Cash</a> | <a href="http://electrum.org/">Learn more about Electrum</a> | <a href="https://github.com/fyookball/electrum">Explore Source Code</a> | <a href="http://www.reddit.com/r/btc">Uncensored Bitcoin Forum</a>
+        </h6>
+      </div>
+      <div class="row">
+          <h6>© ElectronCash.org</h6>
+      </div>
+    </div>
+  </footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
