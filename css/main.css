@@ -255,10 +255,18 @@ button{
   font-weight: bold;
 }
 
+.big-title2{
+  font-size: 9rem;
+  font-weight: bold;
+}
+
+
 .small-title{
   font-size: 4rem;
 }
-
+.small-title2{
+  font-size: 3rem;
+}
 .description{
   font-size: 2rem;
 }
