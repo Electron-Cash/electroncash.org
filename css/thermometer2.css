@@ -119,6 +119,8 @@
 }
 
 .qr-codes {
+  height: 100%;
+  max-height: 100px;
   width: 100%;
   max-width: 100px;
   margin: 0px 0 10px;
