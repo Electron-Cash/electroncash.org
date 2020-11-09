@@ -87,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 abbr[title],
@@ -164,7 +165,7 @@ a {
   background-color: transparent;
 }
 a:hover {
-  color: #117964;
+  color: #1abc9c;
   text-decoration: underline;
 }
 
@@ -3967,6 +3968,14 @@ input[type=button].btn-block {
   justify-content: space-between;
   padding: 0.5rem 0.1rem;
 }
+.bg-navbar{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0f1820+37,4f4f4f+100 */
+	background: #0f1820; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #0f1820 37%, #4f4f4f 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #0f1820 37%,#4f4f4f 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #0f1820 37%,#4f4f4f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1820', endColorstr='#4f4f4f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 .navbar .container,
 .navbar .container-fluid,
 .navbar .container-sm,
@@ -6085,6 +6094,14 @@ a.close.disabled {
 
 .bg-primary {
   background-color: #0AC18E !important;
+}
+
+.bg-masthead {
+  background: url(../assets/img/header.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10077,6 +10094,7 @@ h3 {
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #fff;
+  padding: 0.5rem !important;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: #0AC18E;
@@ -10094,8 +10112,8 @@ h3 {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
@@ -10115,15 +10133,15 @@ h3 {
   }
 
   #mainNav.navbar-shrink {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
 }
 .masthead {
-  padding-top: calc(5rem + 74px);
+  padding-top: calc(5rem + 34px);
   padding-bottom: 5rem;
 }
 .masthead .masthead-heading {
@@ -10140,7 +10158,7 @@ h3 {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(5rem + 104px);
+    padding-top: calc(5rem + 74px);
     padding-bottom: 5rem;
   }
   .masthead .masthead-heading {
@@ -10152,18 +10170,18 @@ h3 {
   }
 }
 
-.benefits .benefits-item {
+.features .features-item {
   display: block;
   max-width: 25rem;
   text-align: center;
 }
-.benefits-item .benefits-item-header {
+.features-item .features-item-header {
 	font-weight: bold;
 	font-size: 1.5rem !important;
 	margin-top: 1rem;
 	margin-bottom: 0.1rem;
 }
-.benefits-item .benefits-item-description {
+.features-item .features-item-description {
 	font-size: 1.3rem;
 }
 
