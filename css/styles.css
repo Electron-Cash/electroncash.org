@@ -6097,7 +6097,8 @@ a.close.disabled {
 }
 
 .bg-masthead {
-  background: url(../assets/img/header.png) no-repeat center center; 
+  background: url(../assets/img/header.png) no-repeat center center;
+  background-color: transparent !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
