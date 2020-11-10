@@ -3971,9 +3971,9 @@ input[type=button].btn-block {
 .bg-navbar{
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0f1820+37,4f4f4f+100 */
 	background: #0f1820; /* Old browsers */
-	background: -moz-linear-gradient(-45deg,  #0f1820 37%, #4f4f4f 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg,  #0f1820 37%,#4f4f4f 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg,  #0f1820 37%,#4f4f4f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(-75deg,  #0f1820 55%, #4f4f4f 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-75deg,  #0f1820 55%,#4f4f4f 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(165deg,  #0f1820 55%,#4f4f4f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1820', endColorstr='#4f4f4f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .navbar .container,
