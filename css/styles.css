@@ -556,7 +556,7 @@ pre code {
 
 @media (min-width: 576px) {
   .container-sm, .container {
-    max-width: 540px;
+    max-width: 600px;
   }
 }
 @media (min-width: 768px) {
@@ -3960,6 +3960,16 @@ input[type=button].btn-block {
   display: block;
 }
 
+#note {
+	background: #A92A1D;
+	color: white;
+	font-size: 1.0rem;
+	padding: 0.5rem;
+    text-align: center;
+    overflow: hidden; 
+	margin-bottom: 1.5rem;
+}
+
 .navbar {
   position: relative;
   display: flex;
@@ -3991,7 +4001,7 @@ input[type=button].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  margin-left: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
@@ -4030,6 +4040,7 @@ input[type=button].btn-block {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
+  margin-right: 1rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
@@ -10142,8 +10153,8 @@ h3 {
   }
 }
 .masthead {
-  padding-top: calc(5rem + 34px);
-  padding-bottom: 5rem;
+  padding-top: calc(2rem + 94px);
+  padding-bottom: 2rem;
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -10159,8 +10170,8 @@ h3 {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(5rem + 74px);
-    padding-bottom: 5rem;
+    //padding-top: calc(3rem + 94px);
+    //padding-bottom: 3rem;
   }
   .masthead .masthead-heading {
     font-size: 2rem;
