@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: default
+  labels:
+    service: electroncash
+  name: electroncash
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      service: electroncash
+  template:
+    metadata:
+      labels:
+        service: electroncash
+    spec:
+      containers:
+      - image: zquestz/electroncash:latest
+        imagePullPolicy: Always
+        name: electroncash
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "16Mi"
+      restartPolicy: Always
