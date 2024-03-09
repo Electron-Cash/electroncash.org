@@ -62,7 +62,7 @@ window.onload = function () {
 		if (scrollTop>35) {
 			$('.erasable-header').css({'padding-top':'20px'});
 		}
-		else {
+		else if (scrollTop>0) {
 			$('.erasable-header').css({'padding-top':(50-scrollTop)});
 		}
   	});
