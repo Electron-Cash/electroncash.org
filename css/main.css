@@ -27,12 +27,6 @@ button{
 }
 
 /* HEADER */
-.header {
-  font-weight: 400;
-  letter-spacing: -.002em;
-  line-height: 1.08349;
-}
-
 .erasable-header {
   position: fixed;
   width: 100%;
