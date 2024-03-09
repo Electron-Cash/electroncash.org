@@ -17,6 +17,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" type="text/css" media="all">
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -188,8 +192,8 @@
       <div class="row">
         <div class="card">
             <div class="content">
-              <h3>What is SPV?</h3>
-              <p>
+              <center><h3>What is SPV?</h3></center>
+              <center><p>
                 SPV stands for Simplified Payment Verification.  It was 
 first described by Satoshi Nakamoto in the original Bitcoin whitepaper. 
  This method allows a wallet to provide strong security without the need
@@ -201,7 +205,7 @@ difficulty level.
                 Electron Cash relies on a distributed network of servers
  which handle the heaviest part of blockchain operations.  Your private 
 keys sign transactions locally.  They are never sent to the servers.
-              </p>
+              </p></center>
             </div>
           </div>
       </div>
@@ -349,7 +353,7 @@ outdated version if absolutely necessary or for research purposes.
   <div class="row">
         <div class="twelve columns">
   <h3>The Revolution Will Not Be Centralized</h3>
-         <center><img style="max-width:100%;" src="images/4-bitcoin-cash-logo-ot-small.png"></center>
+         <center><img style="max-width:100%; height:318px" src="images/4-bitcoin-cash-logo-ot-small.png"></center>
 
 <Hr width=50%>
 <center><a href="https://satochip.io/shop/wallet/13/?campaign=ElectronCash"><img style="max-width:100%;" src="images/Satochip_banner.gif"></center></a>
@@ -383,7 +387,7 @@ outdated version if absolutely necessary or for research purposes.
 
  <div id ="donate" class="row"> 
   
-          <p style="overflow-wrap: break-word;">Electron Cash development is community funded.  You can donate:<BR><B>bitcoincash:qz4wq9m860zr5p2nfdpttm5ymdqdyt3psc95qjagae</b>
+          <p style="overflow-wrap: break-word;">Electron Cash development is community funded.  You can donate:<BR><B onclick="CopyToClipboard('donateAddress');return false;" id="donateAddress">bitcoincash:qz4wq9m860zr5p2nfdpttm5ymdqdyt3psc95qjagae</B>
  
 <P><BR> 
 
