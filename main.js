@@ -59,11 +59,21 @@ window.onload = function () {
 
 	$(window).scroll(function(){
 	    var scrollTop = $(window).scrollTop();
-	    if (scrollTop > 35) {
-	        $('.erasable-header').addClass('shrink');
-	    } else {
-	        $('.erasable-header').removeClass('shrink');
-	    }
+		if (scrollTop>35) {
+			$('.erasable-header').css({'padding-top':'20px'});
+		}
+		else {
+			$('.erasable-header').css({'padding-top':(50-scrollTop)});
+		}
+
+		//$('.erasable-header').css({'padding-top':(Math.min(20,50-scrollTop);
+
+
+	    //if (scrollTop > 35) {
+	    //    $('.erasable-header').addClass('shrink');
+	    //} else {
+	    //    $('.erasable-header').removeClass('shrink');
+	    //}
   	});
 
   	$('.hamburger-shell').click(function(){
