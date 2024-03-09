@@ -52,16 +52,6 @@ button{
   color: #0056C0;
 }
 
-.shrink{
-  position: fixed;
-  width: 100%;
-  padding-top: 20px;
-  transition: 0.4s all;
-  z-index: 100;
-  background-color: #0056C0;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
 .right{
   text-align: right;
   align-items: right;
