@@ -387,11 +387,38 @@ outdated version if absolutely necessary or for research purposes.
 
  <div id ="donate" class="row"> 
   
-          <p style="overflow-wrap: break-word;">Electron Cash development is community funded.  You can donate:<BR><B onclick="CopyToClipboard('donateAddress');return false;" id="donateAddress">bitcoincash:qz4wq9m860zr5p2nfdpttm5ymdqdyt3psc95qjagae</B>
- 
-<P><BR> 
+    <p style="overflow-wrap: break-word; margin-bottom:0;">Electron Cash development is community funded.  You can donate:</p>
+      <div class="tooltip">
+        <b id="donateAddress" style="overflow-wrap: break-word;">bitcoincash:qz4wq9m860zr5p2nfdpttm5ymdqdyt3psc95qjagae</b>
+        <button class="tooltip" onclick="copyText()" onmouseout="outFunc">
+          <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+          <img class="copyIcon icon" src="images/copy.svg">
+        </button>
+      </div>
 
 
+<script>
+function copyText() {
+  var copyText = document.getElementById("donateAddress").innerText;
+  var elem = document.createElement("textarea");
+  document.body.appendChild(elem);
+  elem.value = copyText;
+  elem.select();
+  document.execCommand("copy");
+  document.body.removeChild(elem);
+
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied";
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+</script>
+<br>
+<br>
 </div>
 
 
