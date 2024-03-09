@@ -2,19 +2,19 @@ window.onload = function () {
 
 	$("#download-button").click(function() {
 		$('html,body').animate({
-			scrollTop: $("#download").offset().top},
+			scrollTop: $("#download").offset().top-75},
 			'slow');
 	});
 
 	$("#faq-button").click(function() {
 		$('html,body').animate({
-			scrollTop: $("#faq").offset().top},
+			scrollTop: $("#faq").offset().top-75},
 			'slow');
 	});
 
 	$("#benefits-button").click(function() {
 		$('html,body').animate({
-			scrollTop: $("#benefits").offset().top},
+			scrollTop: $("#benefits").offset().top-75},
 			'slow');
 	});
 
@@ -64,6 +64,9 @@ window.onload = function () {
 		}
 		else if (scrollTop>0) {
 			$('.erasable-header').css({'padding-top':(50-scrollTop)});
+		}
+		else {
+			$('.erasable-header').css({'padding-top':50});
 		}
   	});
 
