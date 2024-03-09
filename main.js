@@ -59,7 +59,7 @@ window.onload = function () {
 
 	$(window).scroll(function(){
 	    var scrollTop = $(window).scrollTop();
-	    if (scrollTop > 75) {
+	    if (scrollTop > 35) {
 	        $('.erasable-header').addClass('shrink');
 	    } else {
 	        $('.erasable-header').removeClass('shrink');
