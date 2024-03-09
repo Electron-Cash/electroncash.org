@@ -276,11 +276,11 @@ button{
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  -webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 8s; /* Firefox < 16 */
-        -ms-animation: fadein 8s; /* Internet Explorer */
-         -o-animation: fadein 8s; /* Opera < 12.1 */
-            animation: fadein 8s;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 
 }
 
@@ -448,6 +448,55 @@ footer a:hover{
   color: #A5ACBF;
   text-decoration: none;
 }
+
+/*Copy Button*/
+.copyIcon {
+  filter:invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  vertical-align: text-bottom;
+
+}
+
+
+.tooltip {
+  position: relative;
+  /*display: inline-block;*/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 0.8em;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0%;
+  margin-left: -45px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
 
 /*MOBILE OPTIMIZATION*/
 @media only screen and (max-width: 1000px) {
