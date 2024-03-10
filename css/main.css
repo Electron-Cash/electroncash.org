@@ -32,7 +32,6 @@ button{
   width: 100%;
   margin-top: -3.5rem;
   padding-top: 50px;
-  transition: 0.7s all;
   z-index: 100;
   background-color: #0056C0;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -51,16 +50,6 @@ button{
   transition: .3s;
   background-color: white;
   color: #0056C0;
-}
-
-.shrink{
-  position: fixed;
-  width: 100%;
-  padding-top: 20px;
-  transition: 0.7s all;
-  z-index: 100;
-  background-color: #0056C0;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .right{
