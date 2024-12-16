@@ -9,3 +9,53 @@ head, body {
        -o-animation: fadein 2s; /* Opera < 12.1 */
           animation: fadein 2s;
 }
+
+/* For users who might have set OS dark mode but not the data-bs-theme */
+@media (prefers-color-scheme: dark) {
+    html:not([data-bs-theme="light"]) {
+        --bs-body-bg: #0c0c0c;
+        /*--bs-body-color: #eee;*/
+        --bs-dark-text-emphasis: #68737d;
+    }
+}
+
+/* Theme Float Button */
+
+.theme {
+    z-index: 2;
+    position: fixed;
+    top: 120px;
+    left:0;
+}
+
+.theme-switcher .dropdown-toggle::after {
+  vertical-align: 0.25em;
+}
+
+.theme-switcher .dropdown-toggle i {
+  font-size: 1.25em;
+  line-height: 1;
+}
+
+.theme-switcher .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.theme-switcher .dropdown-item i {
+  margin-right: 0.5rem;
+}
+
+/* Active theme indicator */
+.theme-switcher .dropdown-item.active {
+  background-color: var(--bs-secondary-bg); /* Assuming secondary background color for active state */
+  color: var(--bs-secondary-color); /* Assuming secondary text color for active state */
+}
+
+
+.custom-icon-bi {
+  font-size: 4em;
+}
+.custom-icon {
+  height: 2em;
+}

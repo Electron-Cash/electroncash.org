@@ -183,38 +183,41 @@
     </div>
 
     <!--Benefits-->
-    <div class="container py-2">
+    <div class="container py-5">
+      <div class="row py-3 text-center text-dark-emphasis">
+        <h2 class="fs-1">Benefits</h2>
+      </div>
       <div class="row py-3">
-        <div class="col-3">
+        <div class="col-lg-3">
           <div class="card border-0 text-center text-dark-emphasis">
-            <p class="fs-1"><i class="bi bi-safe-fill"></i></p>
+            <p class="custom-icon-bi"><i class="bi bi-safe-fill"></i></p>
             <div class="card-body">
               <h4 class="card-title">Safe</h4>
               <p class="card-text fs-5">Your private keys are encrypted and never leave your computer.</p>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
           <div class="card border-0 text-center text-dark-emphasis">
-            <p class="fs-1"><i class="bi bi-clipboard-heart-fill"></i></p>
+            <p class="custom-icon-bi"><i class="bi bi-clipboard-heart-fill"></i></p>
             <div class="card-body">
               <h4 class="card-title">Forgiving</h4>
               <p class="card-text fs-5">Your funds can be recovered from a secret phrase.</p>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
           <div class="card border-0 text-center text-dark-emphasis">
-            <p class="fs-1"><i class="bi bi-stopwatch-fill"></i></p>
+            <p class="custom-icon-bi"><i class="bi bi-stopwatch-fill"></i></p>
             <div class="card-body">
               <h4 class="card-title">Instant On</h4>
               <p class="card-text fs-5">Electron Cash is fast, because it uses servers that index the Bitcoin Cash blockchain.</p>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
           <div class="card border-0 text-center text-dark-emphasis">
-            <p class="fs-1"><i class="bi bi-box-arrow-right"></i></p>
+            <p class="custom-icon-bi"><i class="bi bi-box-arrow-right"></i></p>
             <div class="card-body">
               <h4 class="card-title">No Lock-In</h4>
               <p class="card-text fs-5">You can export your private keys and use them in other Bitcoin Cash clients.</p>
@@ -223,36 +226,36 @@
         </div>
       </div>
       <div class="row py-3">
-        <div class="col-3">
+        <div class="col-lg-3">
           <div class="card border-0 text-center text-dark-emphasis">
-            <p class="fs-1"><i class="bi bi-lightning-fill"></i></p>
+            <p class="custom-icon-bi"><i class="bi bi-lightning-fill"></i></p>
             <div class="card-body">
               <h4 class="card-title">No Downtimes</h4>
               <p class="card-text fs-5">Electron Cash servers are decentralized and redundant. Your wallet is never down.</p>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
           <div class="card border-0 text-center text-dark-emphasis">
-            <p class="fs-1"><i class="bi bi-shield-shaded"></i></p>
+            <p class="custom-icon-bi"><i class="bi bi-shield-shaded"></i></p>
             <div class="card-body">
               <h4 class="card-title">Proof Checking</h4>
               <p class="card-text fs-5">Electron Cash verifies all the transactions in your history using SPV.</p>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
           <div class="card border-0 text-center text-dark-emphasis">
-            <p class="fs-1"><i class="bi bi-snow"></i></p>
+            <p class="custom-icon-bi"><i class="bi bi-snow"></i></p>
             <div class="card-body">
               <h4 class="card-title">Cold Storage</h4>
               <p class="card-text fs-5">Keep your private keys offline, and go online with a watching-only wallet.</p>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
           <div class="card border-0 text-center text-dark-emphasis">
-            <p class="fs-1"><i class="bi bi-diagram-3-fill"></i></p>
+            <p class="custom-icon-bi"><i class="bi bi-diagram-3-fill"></i></p>
             <div class="card-body">
               <h4 class="card-title">Multisig</h4>
               <p class="card-text fs-5">Split the permission to spend your coins between several wallets.</p>
@@ -261,27 +264,27 @@
         </div>
       </div>
       <div class="row py-3">
-        <div class="col-3">
+        <div class="col-lg-3">
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
           <div class="card border-0 text-center text-dark-emphasis">
-            <p class="fs-1"><i class="bi bi-shield-shaded"></i></p>
+            <p class="custom-icon-bi"><i class="bi bi-shield-shaded"></i></p>
             <div class="card-body">
               <h4 class="card-title">Privacy</h4>
               <p class="card-text fs-5">Add privacy with CashFusion coinjoins and receive funds with stealth (RPA) addresses.</p>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
           <div class="card border-0 text-center text-dark-emphasis">
-            <p class="fs-1"><img src="images/CashTokens_BW.svg" alt="Logo for CashTokens" style="height: 1.5em; fill:var(--bs-dark-text-emphasis);" class="text-secondary"></p>
+            <p class="fs-1"><img src="images/CashTokens_Gray.svg" alt="Logo for CashTokens" class="custom-icon" id="img2"></p>
             <div class="card-body">
               <h4 class="card-title">CashTokens</h4>
               <p class="card-text fs-5">Use CashTokens, the built-in token system for the Bitcoin Cash network.</p>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
         </div>
       </div>
     </div>
@@ -348,6 +351,33 @@
           setTheme(theme);
         });
       });
+    });
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to swap images
+
+
+        function swapImage2() {
+            const img2 = document.getElementById('img2')
+            const theme = document.documentElement.getAttribute('data-bs-theme');
+            
+            if (theme === 'dark') {
+                img2.src = 'images/CashTokens_GrayDark.svg?v=0.01';
+            } else {
+                img2.src = 'images/CashTokens_Gray.svg?v=0.01';
+            }
+        }
+
+        // Initial check
+        swapImage2();
+
+        // Listen for theme changes
+        const observer = new MutationObserver(swapImage);
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ['data-bs-theme']
+        });
     });
     </script>
 
