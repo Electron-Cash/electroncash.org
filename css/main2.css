@@ -24,7 +24,7 @@ head, body {
 .theme {
     z-index: 2;
     position: fixed;
-    top: 120px;
+    top: 110px;
     left:0;
 }
 
