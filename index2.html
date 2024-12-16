@@ -109,7 +109,7 @@
         </div>
 -->
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top" data-bs-theme="dark">
       <div class="container">
         <a class="navbar-brand" href="#">Electron Cash</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -388,7 +388,7 @@
     <div class="container py-3">
       <div class="row py-3 text-center text-dark-emphasis">
         <h2 class="fs-1 my-3">The Revolution Will Not Be Centralized</h2>
-        <img class="img-fluid" style="max-height:100px" src="images/4-bitcoin-cash-logo-ot-small.svg">
+        <img class="img-fluid" id="bch_logo" style="max-height:100px" src="images/bchLogoFullDark.svg">
       </div>
       <hr class="border border-emphasis border-1 opacity-100">
     </div>
@@ -474,14 +474,17 @@
         function swapImage() {
             const img1 = document.getElementById('img1')
             const img2 = document.getElementById('img2')
+            const img3 = document.getElementById('bch_logo')
             const theme = document.documentElement.getAttribute('data-bs-theme');
             
             if (theme === 'dark') {
                 img1.src = 'images/CashFusionIcon_GrayDark.svg?v=0.01';
                 img2.src = 'images/CashTokens_GrayDark.svg?v=0.01';
+                img3.src = 'images/bchLogoFullWhite.svg?v=0.01';
             } else {
                 img1.src = 'images/CashFusionIcon_Gray.svg?v=0.01';
                 img2.src = 'images/CashTokens_Gray.svg?v=0.01';
+                img3.src = 'images/bchLogoFullDark.svg?v=0.01'
             }
         }
 
