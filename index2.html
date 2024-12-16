@@ -268,7 +268,7 @@
         </div>
         <div class="col-lg-3">
           <div class="card border-0 text-center text-dark-emphasis">
-            <p class="custom-icon-bi"><i class="bi bi-shield-shaded"></i></p>
+            <p class="fs-1"><img src="images/CashFusionIcon_Gray.svg" alt="Logo for CashTokens" class="custom-icon" id="img1"></p>
             <div class="card-body">
               <h4 class="card-title">Privacy</h4>
               <p class="card-text fs-5">Add privacy with CashFusion coinjoins and receive funds with stealth (RPA) addresses.</p>
@@ -357,20 +357,22 @@
     document.addEventListener('DOMContentLoaded', function() {
         // Function to swap images
 
-
-        function swapImage2() {
+        function swapImage() {
+            const img1 = document.getElementById('img1')
             const img2 = document.getElementById('img2')
             const theme = document.documentElement.getAttribute('data-bs-theme');
             
             if (theme === 'dark') {
+                img1.src = 'images/CashFusionIcon_GrayDark.svg?v=0.01';
                 img2.src = 'images/CashTokens_GrayDark.svg?v=0.01';
             } else {
+                img1.src = 'images/CashFusionIcon_Gray.svg?v=0.01';
                 img2.src = 'images/CashTokens_Gray.svg?v=0.01';
             }
         }
 
         // Initial check
-        swapImage2();
+        swapImage();
 
         // Listen for theme changes
         const observer = new MutationObserver(swapImage);
