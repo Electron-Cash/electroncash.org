@@ -89,7 +89,7 @@
       </script>
   </head>
 
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navId" data-bs-smooth-scroll="true" tabindex="0">
 
     <div class="container-fluid">
     <div class="alert alert-danger d-flex align-items-center justify-content-center my-2 py-2" role="alert">
@@ -109,7 +109,7 @@
         </div>
 -->
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-primary sticky-top" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top" id="navId" data-bs-theme="dark">
       <div class="container">
         <a class="navbar-brand" href="#">Electron Cash</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,8 +117,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#_home">Home</a>
+            <a class="nav-link" href="#_home">Home</a>
             <a class="nav-link" href="#_benefits">Benefits</a>
+            <a class="nav-link" href="#_spv">SPV</a>
             <a class="nav-link" href="#_download">Download</a>
             <a class="nav-link" href="#_FAQ">FAQ</a>
             <a class="nav-link" href="ecosystem">Ecosystem</a>
@@ -160,7 +161,7 @@
       <div class="row align-items-center justify-content-center">
         <div class="col-xxl-4 text-center">
           <div class="d-grid gap-2 mx-auto">
-            <a href="#_download" download="Bitcoin Forks Map v4.7.pdf">
+            <a href="#_download">
               <button type="button" class="btn btn-primary btn-lg text-uppercase" style="font-size:1em"><i class="bi bi-download"></i> Download latest version 4.4.2</button>
             </a>
           </div>
@@ -374,7 +375,7 @@
     </div>
 
     <!--FAQ-->
-    <div class="container" id="_faq">
+    <div class="container" id="_FAQ">
       <div class="row text-center text-dark-emphasis">
         <h2 class="fs-1">FAQ</h2>
         <h2 class="fs-2 mb-3">What if I need support?</h2>
