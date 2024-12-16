@@ -2,14 +2,6 @@ head, body {
   font-family: "Ubuntu","SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif !important;
 }
 
-.demo-shot {
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 2s; /* Firefox < 16 */
-      -ms-animation: fadein 2s; /* Internet Explorer */
-       -o-animation: fadein 2s; /* Opera < 12.1 */
-          animation: fadein 2s;
-}
-
 /* For users who might have set OS dark mode but not the data-bs-theme */
 @media (prefers-color-scheme: dark) {
     html:not([data-bs-theme="light"]) {
