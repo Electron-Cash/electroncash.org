@@ -2,6 +2,10 @@ head, body {
   font-family: "Ubuntu","SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif !important;
 }
 
+html, head, body {
+  contain:paint;
+}
+
 /* For users who might have set OS dark mode but not the data-bs-theme */
 @media (prefers-color-scheme: dark) {
     html:not([data-bs-theme="light"]) {
