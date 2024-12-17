@@ -20,7 +20,7 @@ html, head, body {
 .theme {
   z-index: 2;
   position: sticky;
-  top: 110px;
+  top: 50px;
   left:0;
 }
 
