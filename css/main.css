@@ -18,10 +18,10 @@ html, head, body {
 /* Theme Float Button */
 
 .theme {
-    z-index: 2;
-    position: float;
-    top: 110px;
-    left:0;
+  z-index: 2;
+  position: sticky;
+  top: 110px;
+  left:0;
 }
 
 .theme-switcher .dropdown-toggle::after {
