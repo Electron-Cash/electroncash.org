@@ -19,7 +19,7 @@ html, head, body {
 
 .theme {
     z-index: 2;
-    position: fixed;
+    position: float;
     top: 110px;
     left:0;
 }
