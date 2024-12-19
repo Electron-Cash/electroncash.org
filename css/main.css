@@ -56,3 +56,8 @@ html, head, body {
   height: 2em;
   margin: 0.5em;
 }
+
+.card-img-standard {
+    height:6rem;
+    object-fit: contain;
+}
