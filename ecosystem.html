@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no"> <!--Prevents browsers from trying to make a number a clickable phone number (can still use "tel:" if we want this functionality)-->
+
+    <!--Web-App Capable-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="ElectronCash-site">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" sizes="192x192" href="https://electroncash.org/images/EC.png">
+
+    <!-- Canonical link for SEO -->
+    <link href="https://electroncash.org/nov2018.html" rel="canonical" data-rh="true">
+    <link href="https://electroncash.org/nov2018.html" hreflang="x-default" rel="alternate" data-rh="true">
+
+    <!-- Primary Meta Tags -->
+    <title>Electron Cash Bounties</title>
+    <meta name="title" content="Electron Cash | BCH Ecosystem" >
+    <meta name="description" content="Find more resources across the BCH Ecosystem!">
+
+    <!-- Use Google Search Console and Bing Webmaster Tools for SEO data -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://electroncash.org/nov2018.html">
+    <meta property="og:title" content="Electron Cash | BCH Ecosystem">
+    <meta property="og:description" content="Find more resources across the BCH Ecosystem!">
+    <meta property="og:image" content="https://electroncash.org/images/ec-logo-7.png">
+    <meta property="og:image:alt" content="Electron Cash logo.">
+    <meta property="og:article:section" content="Information">
+    <meta property="og:article:tag" content="Bitcoin">
+    <meta property="og:article:tag" content="Bitcoin Cash">
+    <meta property="og:article:tag" content="BCH">
+    <meta property="og:article:tag" content="Cryptocurrencies">
+    <meta property="og:article:tag" content="Wallet">
+    <meta property="og:article:tag" content="Ecosystem">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://electroncash.org/nov2018.html">
+    <meta name="twitter:site" content="@electroncash">
+    <meta name="twitter:creator" content="@electroncash">
+    <meta property="twitter:title" content="Electron Cash | BCH Ecosystem">
+    <meta property="twitter:description" content="Find more resources across the BCH Ecosystem!">
+    <meta property="twitter:image" content="https://electroncash.org/images/EC.png">
+
+    <meta name="keywords" content="Bitcoin, Bitcoin Cash, BTC, BCH, Satoshi, Bcash, crypto, electron cash, digital currency, wallet, DeFi, altcoin">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="author" content="Electron Cash">
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="images/png" href="favicon.png">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" type="text/css" media="all">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css?v=0.01">
+
+    <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+      <!-- Schema -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Electron Cash | BCH Ecosystem",
+        "alternateName": "Electron Cash BCH Ecosystem",
+        "url": "https://electroncash.org/nov2018.html",
+        "logo": "https://electroncash.org/images/ec-logo-7.png",
+        "sameAs": [
+          "https://x.com/electroncash",
+          "https://github.com/Electron-Cash/electroncash.org"
+        ]
+      }
+      </script>
+  </head>
+
+  <body data-bs-smooth-scroll="true">
+
+    <div class="container-fluid">
+    <div class="alert alert-danger d-flex align-items-center justify-content-center my-2 py-2" role="alert">
+      <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Danger:">
+        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </svg>
+      <div class="pe-3">
+        <span class="fw-bold">Beware of imposter sites.</span> ElectronCash.ORG is the ONLY official site for this wallet.
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  </div>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Electron Cash</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav navbar-nav ms-auto">
+            <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Floating Theme Button -->
+    <div class="theme p-2">
+      <div class="dropdown theme-switcher">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="themeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <i id="themeIcon" class="bi bi-moon-stars-fill"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
+          <li><a class="dropdown-item" href="#" data-theme="light"><i class="bi bi-brightness-high-fill"></i> Light</a></li>
+          <li><a class="dropdown-item" href="#" data-theme="dark"><i class="bi bi-moon-fill"></i> Dark</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Ecosystem-->
+    <div class="container py-5" id="_ecosystem">
+      <div class="row text-center pb-5">
+        <h2 class="fs-1 text-light-emphasis">Ecosystem</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-6 col-md-12 mb-4">
+          <div class="card h-100">
+            <div class="card-header">Informational</div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between p-md-1">
+                <div class="d-flex flex-row">
+                  <div class="align-self-center">
+                    <img src="images/logosForEcosystem/square/BCHPodcast.svg" alt="Bitcoin Cash Podcast logo" class="card-img-standard me-3">
+                  </div>
+                  <div>
+                    <h4>Bitcoin Cash Podcast</h4>
+                    <p class="mb-0">Weekly podcast with a variety of guests discussing a wide range of topics tangential to BCH's rise to global reserve currency.</p>
+                  </div>
+                </div>
+                <div class="align-self-center ms-3">
+                  <a href="https://www.bitcoincashpodcast.com" class="btn btn-lg btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-md-12 mb-4">
+          <div class="card h-100">
+            <div class="card-header">Informational</div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between p-md-1">
+                <div class="d-flex flex-row">
+                  <div class="align-self-center">
+                    <img src="images/logosForEcosystem/square/BCHF.png" alt="Bitcoin Cash Podcast logo" class="card-img-standard me-3">
+                  </div>
+                  <div>
+                    <h4>Bitcoin Cash Foundation</h4>
+                    <p class="mb-0">The BCHF is a community backed effort focused on outreach and adoption of Bitcoin Cash as global peer to peer electronic cash.</p>
+                  </div>
+                </div>
+                <div class="align-self-center ms-3">
+                  <a href="https://bitcoincashfoundation.org" class="btn btn-lg btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-md-12 mb-4">
+          <div class="card h-100">
+            <div class="card-header">Informational</div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between p-md-1">
+                <div class="d-flex flex-row">
+                  <div class="align-self-center">
+                    <img src="images/logosForEcosystem/square/whybitcoincash.svg" alt="Bitcoin Cash Podcast logo" class="card-img-standard me-3">
+                  </div>
+                  <div>
+                    <h4>Why Bitcoin Cash</h4>
+                    <p class="mb-0">A website built by KimDotCom highlighting Bitcoin Cash's advantages over Bitcoin Core.</p>
+                  </div>
+                </div>
+                <div class="align-self-center ms-3">
+                  <a href="https://www.whybitcoincash.com" class="btn btn-lg btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-md-12 mb-4">
+          <div class="card h-100">
+            <div class="card-header">Informational</div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between p-md-1">
+                <div class="d-flex flex-row">
+                  <div class="align-self-center">
+                    <img src="images/logosForEcosystem/square/discover.png" alt="Bitcoin Cash Podcast logo" class="card-img-standard me-3">
+                  </div>
+                  <div>
+                    <h4>Discover.Cash</h4>
+                    <p class="mb-0">A website aimed at highlighting the major features and goals of the Bitcoin Cash ecosystem.</p>
+                  </div>
+                </div>
+                <div class="align-self-center ms-3">
+                  <a href="https://discover.cash" class="btn btn-lg btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-md-12 mb-4">
+          <div class="card h-100">
+            <div class="card-header">Informational</div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between p-md-1">
+                <div class="d-flex flex-row">
+                  <div class="align-self-center">
+                    <img src="images/logosForEcosystem/square/awesome-bitcoin-cash-dark.svg" alt="Bitcoin Cash Podcast logo" class="card-img-standard me-3">
+                  </div>
+                  <div>
+                    <h4>AwesomeBitcoin.cash</h4>
+                    <p class="mb-0">An extensive list of most projects and platforms in the Bitcoin Cash ecosystem.</p>
+                  </div>
+                </div>
+                <div class="align-self-center ms-3">
+                  <a href="https://www.awesomebitcoin.cash" class="btn btn-lg btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-md-12 mb-4">
+          <div class="card h-100">
+            <div class="card-header">Informational</div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between p-md-1">
+                <div class="d-flex flex-row">
+                  <div class="align-self-center">
+                    <img src="images/logosForEcosystem/square/UpgradeHistory.svg" alt="Bitcoin Cash Podcast logo" class="card-img-standard me-3">
+                  </div>
+                  <div>
+                    <h4>Bitcoin Cash Upgrade History</h4>
+                    <p class="mb-0">A full upgrade history of the Bitcoin Cash blockchain since 2009.</p>
+                  </div>
+                </div>
+                <div class="align-self-center ms-3">
+                  <a href="https://minisatoshi.cash/upgrade-history" class="btn btn-lg btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-md-12 mb-4">
+          <div class="card h-100">
+            <div class="card-header">Technical</div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between p-md-1">
+                <div class="d-flex flex-row">
+                  <div class="align-self-center">
+                    <img src="images/logosForEcosystem/square/psf.png" alt="Bitcoin Cash Podcast logo" class="card-img-standard me-3">
+                  </div>
+                  <div>
+                    <h4>Permissionless Software Foundation</h4>
+                    <p class="mb-0">Open-source software aimed at protecting individual freedom in economic activity.</p>
+                  </div>
+                </div>
+                <div class="align-self-center ms-3">
+                  <a href="https://psfoundation.cash" class="btn btn-lg btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-md-12 mb-4">
+          <div class="card h-100">
+            <div class="card-header">Technical</div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between p-md-1">
+                <div class="d-flex flex-row">
+                  <div class="align-self-center">
+                    <img src="images/logosForEcosystem/square/bchn-logomark.svg" alt="Bitcoin Cash Podcast logo" class="card-img-standard me-3">
+                  </div>
+                  <div>
+                    <h4>Bitcoin Cash Node</h4>
+                    <p class="mb-0">The most popular Bitcoin Cash node software.</p>
+                  </div>
+                </div>
+                <div class="align-self-center ms-3">
+                  <a href="https://bitcoincashnode.org/" class="btn btn-lg btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-md-12 mb-4">
+          <div class="card h-100">
+            <div class="card-header">Technical</div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between p-md-1">
+                <div class="d-flex flex-row">
+                  <div class="align-self-center">
+                    <img src="images/logosForEcosystem/square/BCHR.png" alt="Bitcoin Cash Podcast logo" class="card-img-standard me-3">
+                  </div>
+                  <div>
+                    <h4>Bitcoin Cash Research</h4>
+                    <p class="mb-0">Primary forum for discussing BCH Technology & Research.</p>
+                  </div>
+                </div>
+                <div class="align-self-center ms-3">
+                  <a href="https://bitcoincashresearch.org" class="btn btn-lg btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-md-12 mb-4">
+          <div class="card h-100">
+            <div class="card-header">App</div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between p-md-1">
+                <div class="d-flex flex-row">
+                  <div class="align-self-center">
+                    <img src="images/logosForEcosystem/square/paytaca.svg" alt="Bitcoin Cash Podcast logo" class="card-img-standard me-3">
+                  </div>
+                  <div>
+                    <h4>Paytaca</h4>
+                    <p class="mb-0">A popular Bitcoin Cash mobile and browser wallet with point-of-sale support and integration to many BCH tools.</p>
+                  </div>
+                </div>
+                <div class="align-self-center ms-3">
+                  <a href="https://paytaca.com" class="btn btn-lg btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-md-12 mb-4">
+          <div class="card h-100">
+            <div class="card-header">App</div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between p-md-1">
+                <div class="d-flex flex-row">
+                  <div class="align-self-center">
+                    <img src="images/logosForEcosystem/square/cauldron.gif" alt="Cauldron DEX logo" class="card-img-standard me-3">
+                  </div>
+                  <div>
+                    <h4>Cauldron DEX</h4>
+                    <p class="mb-0">The number one DEX on the Bitcoin Cash network with tools to create liquidity pools and facilitating swaps for CashTokens.</p>
+                  </div>
+                </div>
+                <div class="align-self-center ms-3">
+                  <a href="https://cauldron.quest" class="btn btn-lg btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-md-12 mb-4">
+          <div class="card h-100">
+            <div class="card-header">App</div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between p-md-1">
+                <div class="d-flex flex-row">
+                  <div class="align-self-center">
+                    <img src="images/logosForEcosystem/square/moria.png" alt="Moria Money logo" class="card-img-standard me-3">
+                  </div>
+                  <div>
+                    <h4>Moria Money</h4>
+                    <p class="mb-0">Moria is a protocol for secure, oracle-based borrowing against BCH collateral with 100% transparency of Proof-of-reserves.</p>
+                  </div>
+                </div>
+                <div class="align-self-center ms-3">
+                  <a href="https://paytaca.com" class="btn btn-lg btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="bg-primary text-center py-4" data-bs-theme="dark">
+      <div class="row">
+        <h2 class="text-light-emphasis my-4 pb-2">The Revolution Will Not Be Centralized</h2>
+        <h6 class="text-light-emphasis"><a class="link-light" href="https://discover.cash/">Learn about Bitcoin Cash</a> | <a class="link-light" href="https://github.com/Electron-Cash/Electron-Cash">Explore Source Code</a> | <a class="link-light" href="https://www.reddit.com/r/btc">Uncensored Bitcoin Forum</a> | <a class="link-light" href="https://t.me/electroncashwallet">Telegram Chatroom</a> | <a class="link-light" href="https://cashaddress.org/">Paper Wallet</a>
+        </h6>
+        <h6 class="text-light-emphasis mt-3">© ElectronCash.org</h6>
+      </div>
+    </footer>
+
+    
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-bs-theme', theme);
+        localStorage.setItem('bs-theme', theme);
+        updateThemeIcon(theme);
+        updateActiveDropdownItem(theme);
+        updateButtonStyles(); // Call this function to update button styles on theme change
+      }
+
+      function getCurrentTheme() {
+        return localStorage.getItem('bs-theme') || 'dark';
+      }
+
+      function updateThemeIcon(theme) {
+        const icon = document.getElementById('themeIcon');
+        icon.className = `bi ${theme === 'light' ? 'bi-brightness-high-fill' : 'bi-moon-stars-fill'}`;
+      }
+
+      function updateActiveDropdownItem(theme) {
+        document.querySelectorAll('.theme-switcher .dropdown-item').forEach(item => {
+          item.classList.toggle('active', item.getAttribute('data-theme') === theme);
+        });
+      }
+
+      function updateButtonStyles() {
+        document.querySelectorAll('.btn-outline-secondary, .btn-secondary').forEach(button => {
+          const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+          if (currentTheme === 'dark') {
+            button.classList.remove('btn-outline-secondary');
+            button.classList.add('btn-secondary');
+          } else {
+            button.classList.remove('btn-secondary');
+            button.classList.add('btn-outline-secondary');
+          }
+        });
+      }
+
+      setTheme(getCurrentTheme());
+      updateButtonStyles(); // Initial call to ensure buttons are styled correctly on load
+
+      document.querySelectorAll('.theme-switcher .dropdown-item').forEach(item => {
+        item.addEventListener('click', function(e) {
+          e.preventDefault();
+          const theme = this.getAttribute('data-theme');
+          setTheme(theme);
+        });
+      });
+    });
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to swap images
+
+        function swapImage() {
+            const img1 = document.getElementById('img1')
+            const img2 = document.getElementById('img2')
+            const img3 = document.getElementById('bch_logo')
+            const theme = document.documentElement.getAttribute('data-bs-theme');
+            
+            if (theme === 'dark') {
+                img1.src = 'images/CashFusionIcon_GrayDark.svg?v=0.01';
+                img2.src = 'images/CashTokens_GrayDark.svg?v=0.01';
+                img3.src = 'images/bchLogoFullWhite.svg?v=0.01';
+            } else {
+                img1.src = 'images/CashFusionIcon_Gray.svg?v=0.01';
+                img2.src = 'images/CashTokens_Gray.svg?v=0.01';
+                img3.src = 'images/bchLogoFullDark.svg?v=0.01'
+            }
+        }
+
+        // Initial check
+        swapImage();
+
+        // Listen for theme changes
+        const observer = new MutationObserver(swapImage);
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ['data-bs-theme']
+        });
+    });
+    </script>
+
+  </body>
+</html>
