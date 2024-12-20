@@ -1,259 +1,114 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="format-detection" content="telephone=no"> <!--Prevents browsers from trying to make a number a clickable phone number (can still use "tel:" if we want this functionality)-->
+<html lang="en">
+<head>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Electron Cash</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!--Web-App Capable-->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="ElectronCash-site">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" sizes="192x192" href="https://electroncash.org/images/EC.png">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Canonical link for SEO -->
-    <link href="https://electroncash.org/bounties.html" rel="canonical" data-rh="true">
-    <link href="https://electroncash.org/bounties.html" hreflang="x-default" rel="alternate" data-rh="true">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
-    <!-- Primary Meta Tags -->
-    <title>Electron Cash Bounties</title>
-    <meta name="title" content="Electron Cash | Bounties" >
-    <meta name="description" content="Bounties for bug catching on the Electron Cash wallet!">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
 
-    <!-- Use Google Search Console and Bing Webmaster Tools for SEO data -->
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://electroncash.org/bounties.html">
-    <meta property="og:title" content="Electron Cash | Bounties">
-    <meta property="og:description" content="Bounties for bug catching on the Electron Cash wallet!">
-    <meta property="og:image" content="https://electroncash.org/images/ec-logo-7.png">
-    <meta property="og:image:alt" content="Electron Cash logo.">
-    <meta property="og:article:section" content="Information">
-    <meta property="og:article:tag" content="Bitcoin">
-    <meta property="og:article:tag" content="Bitcoin Cash">
-    <meta property="og:article:tag" content="BCH">
-    <meta property="og:article:tag" content="Cryptocurrencies">
-    <meta property="og:article:tag" content="Wallet">
-    <meta property="og:article:tag" content="Ecosystem">
+</head>
+<body id="body">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:url" content="https://electroncash.org/bounties.html">
-    <meta name="twitter:site" content="@electroncash">
-    <meta name="twitter:creator" content="@electroncash">
-    <meta property="twitter:title" content="Electron Cash | Bounties">
-    <meta property="twitter:description" content="Bounties for bug catching on the Electron Cash wallet!">
-    <meta property="twitter:image" content="https://electroncash.org/images/EC.png">
-
-    <meta name="keywords" content="Bitcoin, Bitcoin Cash, BTC, BCH, Satoshi, Bcash, crypto, electron cash, digital currency, wallet, DeFi, altcoin">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
-    <meta name="author" content="Electron Cash">
-
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="images/png" href="favicon.png">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" type="text/css" media="all">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css?v=0.01">
-
-    <!-- Bootstrap -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-      <!-- Schema -->
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "ElectronCash | Bounties",
-        "alternateName": "Electron Cash Bounties",
-        "url": "https://electroncash.org/bounties.html",
-        "logo": "https://electroncash.org/images/ec-logo-7.png",
-        "sameAs": [
-          "https://x.com/electroncash",
-          "https://github.com/Electron-Cash/electroncash.org"
-        ]
-      }
-      </script>
-  </head>
-
-  <body data-bs-smooth-scroll="true">
-
-    <div class="container-fluid">
-    <div class="alert alert-danger d-flex align-items-center justify-content-center my-2 py-2" role="alert">
-      <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Danger:">
-        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-      </svg>
-      <div class="pe-3">
-        <span class="fw-bold">Beware of imposter sites.</span> ElectronCash.ORG is the ONLY official site for this wallet.
+  <aside class="alert-banner">
+      <div class="alert">
+          <p><strong>Beware of Imposter Sites.</strong> ElectronCash.ORG is the ONLY official site for this wallet.</p>
+  </aside>
+  <header id="topnav">
+    <div class="erasable-header">
+      <div class="container">
+      <div class="row links">
+        <div class="eleven columns left">
+          <h5><a class="home" href="./index.html">Electron Cash</a></h5>
+        </div>
+        <div class="one column topnav-a right">
+          <a href="./index.html">Home</a>
+        </div>
       </div>
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="bg-cover" class="reveal"></div>
+    
+    <a class="hamburger-shell">
+      <div class="hamb top"></div>
+        <div class="hamb middle"></div>
+      <div class="menu-name">MENU</div>
+
+      <ul id="menu">
+          <a href="./index.html"> <li>Home</li></a>
+      </ul>
+    </a>  
+  </header>
+
+  <div class="section bounties-hero">
+    <div class="container">
+      <div class="row">
+        <div class="twelve column hero-title" style="margin-top: 10%">
+          <h1 class="big-title">Bounties</h1>
+          <h3 class="small-title" id="small-title">Earn money for helping us fix bugs and issues.</h3>
+          <p class="fine-print">
+            The fine print: Bounties are denominated in US dollars and are paid in BCH, and may be changed or removed at any time. Bounties are awarded normally on a first come, first served basis, but at our sole discretion, including determining if an issue was successfully or fully resolved. You are soley responsible for any applicable taxes on your earnings. No monies paid constitute employment, partnership, joint-venture or any other business arangement. All merged code becomes part of the project under the MIT lisence.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-primary sticky-top" data-bs-theme="dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Electron Cash</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav navbar-nav ms-auto">
-            <a class="nav-link active" href="index.html" aria-current="page">Home</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Floating Theme Button -->
-    <div class="theme p-2">
-      <div class="dropdown theme-switcher">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="themeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-          <i id="themeIcon" class="bi bi-moon-stars-fill"></i>
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
-          <li><a class="dropdown-item" href="#" data-theme="light"><i class="bi bi-brightness-high-fill"></i> Light</a></li>
-          <li><a class="dropdown-item" href="#" data-theme="dark"><i class="bi bi-moon-fill"></i> Dark</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!--Page header-->
-    <div class="container pt-5 text-center" id="_home">
-      <div class="row pt-5">
-        <div class="col-lg">
-          <h1 class="fw-normal text-light-emphasis my-4">Bounties</h1>
-          <h2 class="my-4 text-dark-emphasis">Earn money for helping us fix bugs and issues.</h2>
-          <h6 class="text-dark-emphasis">The fine print: Bounties are denominated in US dollars and are paid in BCH, and may be changed or removed at any time. Bounties are awarded normally on a first come, first served basis, but at our sole discretion, including determining if an issue was successfully or fully resolved. You are soley responsible for any applicable taxes on your earnings. No monies paid constitute employment, partnership, joint-venture or any other business arangement. All merged code becomes part of the project under the MIT lisence.</h6>
-        </div>
-      </div>
-    </div>
-
-    <!--Bounties Box-->
+  <div class="section bounties">
     <div class="container">
-      <div class="row py-5 my-5">
-          <div class="card shadow border-0 bg-body">
-            <div class="card-body">
-              <div class="card-header border-bottom border-primary border-5 bg-transparent"></div>
-              <h2 class="card-title my-3 text-light-emphasis">Coming Soon</h2>
-              <h4 class="card-text my-3 text-dark-emphasis">$$$</h4>
-              <p class="card-text text-dark-emphasis my-3">There are no bounties currently available.</p>
-            </div>
-            <div class="card-footer bg-transparent border-top-0 mb-5">
-              <a href="" class="btn btn-primary">View</a>
-            </div>
+      <div class="row">
+        <div class="bounties-card">
+          <div class="content">
+            <h3>Coming Soon</h3>
+            <h5>$$$</h5>
+            <p>There are no bounties currently available.</p>
+            <button class="button-primary">View</button>
           </div>
+        </div>
+        
       </div>
     </div>
+  </div>
 
-
-    <footer class="bg-primary text-center py-4" data-bs-theme="dark">
+  <footer>
+    <div class="container">
       <div class="row">
-        <h2 class="text-light-emphasis my-4 pb-2">The Revolution Will Not Be Centralized</h2>
-        <h6 class="text-light-emphasis"><a class="link-light" href="https://discover.cash/">Learn about Bitcoin Cash</a> | <a class="link-light" href="https://github.com/Electron-Cash/Electron-Cash">Explore Source Code</a> | <a class="link-light" href="http://www.reddit.com/r/btc">Uncensored Bitcoin Forum</a> | <a class="link-light" href="https://t.me/electroncashwallet">Telegram Chatroom</a> | <a class="link-light" href="https://cashaddress.org/">Paper Wallet</a>
-        </h6>
-        <h6 class="text-light-emphasis mt-3">© ElectronCash.org</h6>
+        <h4>The Revolution Will Not Be Centralized</h4>
       </div>
-    </footer>
-
-    
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      function setTheme(theme) {
-        document.documentElement.setAttribute('data-bs-theme', theme);
-        localStorage.setItem('bs-theme', theme);
-        updateThemeIcon(theme);
-        updateActiveDropdownItem(theme);
-        updateButtonStyles(); // Call this function to update button styles on theme change
-      }
-
-      function getCurrentTheme() {
-        return localStorage.getItem('bs-theme') || 'dark';
-      }
-
-      function updateThemeIcon(theme) {
-        const icon = document.getElementById('themeIcon');
-        icon.className = `bi ${theme === 'light' ? 'bi-brightness-high-fill' : 'bi-moon-stars-fill'}`;
-      }
-
-      function updateActiveDropdownItem(theme) {
-        document.querySelectorAll('.theme-switcher .dropdown-item').forEach(item => {
-          item.classList.toggle('active', item.getAttribute('data-theme') === theme);
-        });
-      }
-
-      function updateButtonStyles() {
-        document.querySelectorAll('.btn-outline-secondary, .btn-secondary').forEach(button => {
-          const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-          if (currentTheme === 'dark') {
-            button.classList.remove('btn-outline-secondary');
-            button.classList.add('btn-secondary');
-          } else {
-            button.classList.remove('btn-secondary');
-            button.classList.add('btn-outline-secondary');
-          }
-        });
-      }
-
-      setTheme(getCurrentTheme());
-      updateButtonStyles(); // Initial call to ensure buttons are styled correctly on load
-
-      document.querySelectorAll('.theme-switcher .dropdown-item').forEach(item => {
-        item.addEventListener('click', function(e) {
-          e.preventDefault();
-          const theme = this.getAttribute('data-theme');
-          setTheme(theme);
-        });
-      });
-    });
-    </script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Function to swap images
-
-        function swapImage() {
-            const img1 = document.getElementById('img1')
-            const img2 = document.getElementById('img2')
-            const img3 = document.getElementById('bch_logo')
-            const theme = document.documentElement.getAttribute('data-bs-theme');
-            
-            if (theme === 'dark') {
-                img1.src = 'images/CashFusionIcon_GrayDark.svg?v=0.01';
-                img2.src = 'images/CashTokens_GrayDark.svg?v=0.01';
-                img3.src = 'images/bchLogoFullWhite.svg?v=0.01';
-            } else {
-                img1.src = 'images/CashFusionIcon_Gray.svg?v=0.01';
-                img2.src = 'images/CashTokens_Gray.svg?v=0.01';
-                img3.src = 'images/bchLogoFullDark.svg?v=0.01'
-            }
-        }
-
-        // Initial check
-        swapImage();
-
-        // Listen for theme changes
-        const observer = new MutationObserver(swapImage);
-        observer.observe(document.documentElement, {
-            attributes: true,
-            attributeFilter: ['data-bs-theme']
-        });
-    });
-    </script>
-
-  </body>
+      <div class="row">
+        <h6 style="font-size: 1.75rem;">
+          <a href="http://www.bitcoincash.org/">Learn more about Bitcoin Cash</a>  | <a href="https://github.com/fyookball/electrum">Explore Source Code</a> | <a href="http://www.reddit.com/r/btc">Uncensored Bitcoin Forum</a>
+        </h6>
+      </div>
+      <div class="row">
+          <h6>© ElectronCash.org</h6>
+      </div>
+    </div>
+  </footer>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>

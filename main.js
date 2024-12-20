@@ -59,7 +59,7 @@ window.onload = function () {
 
 	$(window).scroll(function(){
 	    var scrollTop = $(window).scrollTop();
-		if (scrollTop>30) {
+		if (scrollTop>35) {
 			$('.erasable-header').css({'padding-top':'20px'});
 		}
 		else if (scrollTop>0) {
