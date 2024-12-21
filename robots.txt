@@ -1,0 +1,1 @@
+User-agent: *Allow: /Sitemap: https://electroncash.org/sitemap.xml
