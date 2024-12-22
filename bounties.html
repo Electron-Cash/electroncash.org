@@ -222,38 +222,6 @@
       });
     });
     </script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Function to swap images
-
-        function swapImage() {
-            const img1 = document.getElementById('img1')
-            const img2 = document.getElementById('img2')
-            const img3 = document.getElementById('bch_logo')
-            const theme = document.documentElement.getAttribute('data-bs-theme');
-            
-            if (theme === 'dark') {
-                img1.src = 'images/CashFusionIcon_GrayDark.svg?v=0.01';
-                img2.src = 'images/CashTokens_GrayDark.svg?v=0.01';
-                img3.src = 'images/bchLogoFullWhite.svg?v=0.01';
-            } else {
-                img1.src = 'images/CashFusionIcon_Gray.svg?v=0.01';
-                img2.src = 'images/CashTokens_Gray.svg?v=0.01';
-                img3.src = 'images/bchLogoFullDark.svg?v=0.01'
-            }
-        }
-
-        // Initial check
-        swapImage();
-
-        // Listen for theme changes
-        const observer = new MutationObserver(swapImage);
-        observer.observe(document.documentElement, {
-            attributes: true,
-            attributeFilter: ['data-bs-theme']
-        });
-    });
-    </script>
 
   </body>
 </html>
