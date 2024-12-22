@@ -426,7 +426,7 @@
               <div class="d-flex justify-content-between p-md-1">
                 <div class="d-flex flex-row">
                   <div class="align-self-center">
-                    <img src="images/logosForEcosystem/square/tapswap-light.png" alt="Tap Swap logo" class="card-img-standard me-3">
+                    <img src="images/logosForEcosystem/square/tapswap-light.png" alt="Tap Swap logo" class="card-img-standard me-3" id="tapswap">
                   </div>
                   <div>
                     <h4>TapSwap</h4>
@@ -449,7 +449,7 @@
               <div class="d-flex justify-content-between p-md-1">
                 <div class="d-flex flex-row">
                   <div class="align-self-center">
-                    <img src="images/logosForEcosystem/square/bchbull-light.png" alt="BCH Bull logo" class="card-img-standard me-3" id="img1">
+                    <img src="images/logosForEcosystem/square/bchbull-light.png" alt="BCH Bull logo" class="card-img-standard me-3" id="bchbull">
                   </div>
                   <div>
                     <h4>BCH Bull</h4>
@@ -559,13 +559,16 @@
         // Function to swap images
 
         function swapImage() {
-            const img1 = document.getElementById('img1')
+            const img1 = document.getElementById('bchbull')
+            const img2 = document.getElementById('tapswap')
             const theme = document.documentElement.getAttribute('data-bs-theme');
             
             if (theme === 'dark') {
                 img1.src = 'images/logosForEcosystem/square/bchbull-dark.png?v=0.01';
+                img2.src = 'images/logosForEcosystem/square/tapswap-dark.png?v=0.01';
             } else {
                 img1.src = 'images/logosForEcosystem/square/bchbull-light.png?v=0.01';
+                img2.src = 'images/logosForEcosystem/square/tapswap-light.png?v=0.01';
             }
         }
 
