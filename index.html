@@ -7,9 +7,11 @@
 
     <!--Web-App Capable-->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="ElectronCash-site">
+    <meta name="apple-mobile-web-app-title" content="EC-Web">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" sizes="192x192" href="https://electroncash.org/images/EC.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="favicon/favicon.png">
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
     <!-- Canonical link for SEO -->
     <link href="https://electroncash.org" rel="canonical" data-rh="true">
@@ -54,8 +56,8 @@
 
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="images/png" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon/favicon.png">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" type="text/css" media="all">
@@ -344,11 +346,12 @@
           </div>
       </div>
       <div class="row py-3 text-center text-dark-emphasis">
-        <h6 class="fw-normal">Note for Windows users: <u>Most users should download the EXE.</u> Anti-virus programs occasionally flag the wallet with false positives. If you trust the developers, then the software is safe once you verify the GPG signatures and/or checksums. Or, you can build the binaries yourself.</h6>
-        <br><br>
-        <h6 class="fw-normal">.AppImage is for any Linux 64 bit (it's a self-contained app bundle with everything inside)</h6>
-        <h6 class="fw-normal">-- Note: Be sure to set this to executable to run it (chmod +x)</h6>
-        <br><br>
+        <div class="col-lg-10 offset-lg-1">
+          <h6 class="fw-normal">Note for Windows users: <u>Most users should download the EXE.</u> Anti-virus programs occasionally flag the wallet with false positives. If you trust the developers, then the software is safe once you verify the GPG signatures and/or checksums. Or, you can build the binaries yourself.</h6>
+          <br><br>
+          <h6 class="fw-normal">.AppImage is for any Linux 64 bit (it's a self-contained app bundle with everything inside). Note: Be sure to set this to executable to run it (chmod +x)</h6>
+          <br><br>
+        </div>
         <div class="alert alert-warning" role="alert">
           Please take the time to verify the authenticity of these files before running them. This protects you from hackers and malware!
         </div>
