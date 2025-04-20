@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html>
-	<head><meta charset="utf-8">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no"> <!--Prevents browsers from trying to make a number a clickable phone number (can still use "tel:" if we want this functionality)-->
 
+    <!--Web-App Capable-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="EC-Web">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" sizes="192x192" href="favicon/favicon.png">
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <!-- Canonical link for SEO -->
+    <link href="https://electroncash.org" rel="canonical" data-rh="true">
+    <link href="https://electroncash.org" hreflang="x-default" rel="alternate" data-rh="true">
+
+    <!-- Primary Meta Tags -->
+    <title>Electron Cash</title>
+    <meta name="title" content="Electron Cash" >
+    <meta name="description" content="A Bitcoin Cash (BCH) SPV Wallet">
+
+    <!-- Use Google Search Console and Bing Webmaster Tools for SEO data -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://electroncash.org">
+    <meta property="og:title" content="Electron Cash">
+    <meta property="og:description" content="A Bitcoin Cash (BCH) SPV Wallet">
+    <meta property="og:image" content="https://electroncash.org/images/EC.png">
+    <meta property="og:image:alt" content="Electron Cash logo">
+    <meta property="og:article:section" content="Information">
+    <meta property="og:article:tag" content="Bitcoin">
+    <meta property="og:article:tag" content="Bitcoin Cash">
+    <meta property="og:article:tag" content="BCH">
+    <meta property="og:article:tag" content="Cryptocurrencies">
+    <meta property="og:article:tag" content="Wallet">
+    <meta property="og:article:tag" content="Ecosystem">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://electroncash.org">
+    <meta name="twitter:site" content="@electroncash">
+    <meta name="twitter:creator" content="@electroncash">
+    <meta property="twitter:title" content="Electron Cash">
+    <meta property="twitter:description" content="A Bitcoin Cash (BCH) SPV Wallet">
+    <meta property="twitter:image" content="https://electroncash.org/images/ec-logo-7.png">
+
+    <meta name="keywords" content="Bitcoin, Bitcoin Cash, BTC, BCH, Satoshi, Bcash, crypto, electron cash, digital currency, wallet, DeFi, altcoin">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="author" content="Electron Cash">
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon/favicon.png">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" type="text/css" media="all">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css?v=0.01">
+
+    <!-- Bootstrap 5.3.3 -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+      <!-- Schema -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Electron Cash",
+        "alternateName": "Electron Cash",
+        "url": "https://electroncash.org",
+        "logo": "https://electroncash.org/images/ec-logo-7.png",
+        "sameAs": [
+          "https://x.com/electroncash",
+          "https://github.com/Electron-Cash/electroncash.org"
+        ]
+      }
+      </script>
 	</head>
 
 	<body>
 
-		<center><a href="https://electroncash.org"><img alt="Error 404: Page not Found" src="images/404kitten.jpg"></a></center>
+	<div class="error-page d-flex align-items-center justify-content-center">
+	    <div class="error-container text-center p-4">
+	        <h1 class="error-code mb-0">404</h1>
+	        <h2 class="display-6 error-message mb-3">Page Not Found</h2>
+	        <p class="lead error-message mb-5">We can't seem to find the page you're looking for.</p>
+	        <div class="d-flex justify-content-center gap-3">
+	            <a href="https://electroncash.org" class="btn btn-glass px-4 py-2">Return Home</a>
+	            <a href="https://github.com/Electron-Cash/electroncash.org/issues" class="btn btn-glass px-4 py-2">Report Problem</a>
+	        </div>
+	    </div>
+	</div>
 
 	</body>
 </html>
