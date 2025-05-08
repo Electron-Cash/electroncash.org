@@ -65,6 +65,57 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css?v=0.01">
 
+    <style>
+    .error-page {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0AC18E 0%, #23a6d5 100%);
+    }
+
+    .error-container {
+      max-width: 600px;
+    }
+
+    .error-code {
+      font-size: 12rem;
+      font-weight: 900;
+      background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.5));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: pulse 2s infinite;
+    }
+
+    .error-message {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    @keyframes pulse {
+      0% {
+          transform: scale(1);
+      }
+
+      50% {
+          transform: scale(1.05);
+      }
+
+      100% {
+          transform: scale(1);
+      }
+    }
+
+    .btn-glass {
+      background: rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(10px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+      color: white !important;
+      transition: all 0.3s ease !important;
+    }
+
+    .btn-glass:hover {
+      background: rgba(255, 255, 255, 0.3) !important;
+      color: white !important;
+    }
+    </style>
+
     <!-- Bootstrap 5.3.6 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
